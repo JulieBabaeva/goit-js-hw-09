@@ -15,3 +15,27 @@
 
 @import url('./badges.css');
 @import url('./back-link.css');
+@import url('simplelightbox/dist/simple-lightbox.min.css');
+
+.gallery {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1128px;
+}
+.gallery-image {
+  height: 200px;
+  width: 360px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-image:hover {
+  display: block;
+  transform: scale(1.03);
+}
